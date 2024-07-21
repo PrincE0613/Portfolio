@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: monospace;                                   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +25,8 @@ margin-left: 20px;
 }
 .container {
     /* text-align: center; */
-    /* background-color: #fff; */
-    background-image:url(walling-XLqiL-rz4V8-unsplash.jpg);
+    background-color: #000000ba;
+    /* background-image:url(walling-XLqiL-rz4V8-unsplash.jpg); */
     padding: 20px;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -65,4 +66,5 @@ color: grey;
 .see-profiles:hover {
     background-color:teal;
     color: #fff;
-}
+    font-size: 15px;
+    transition: 0.5s;}
