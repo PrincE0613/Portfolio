@@ -24,7 +24,7 @@ p{
     margin-left: 20px;
 overflow: hidden;
 border-right: .15em solid rgb(255, 255, 255);
-white-space: nowrap;
+/* white-space:; */
 letter-spacing: .15em;
 animation:
         typing 3.5s steps(50, end),
