@@ -15,14 +15,33 @@ h1{
 display: inline-block;
 font-weight: 100;
 margin-left: 20px;
-/* color:darkslateblue; */
 color:teal;
+/* color:darkslateblue; */
 }
 
+
 p{
-/* color:grey; */
-margin-left: 20px;
+    margin-left: 20px;
+overflow: hidden;
+border-right: .15em solid rgb(255, 255, 255);
+white-space: nowrap;
+letter-spacing: .15em;
+animation:
+        typing 3.5s steps(50, end),
+        blink-caret 1s step-end infinite;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(227, 227, 227); }
+}
+
+
 .container {
     /* text-align: center; */
     background-color: #000000ba;
@@ -58,9 +77,21 @@ color: grey;
     padding: 10px 20px;
     color:white;
     font-weight: 700;
+    font-size: 15px;
     text-decoration: none;
     border:none ;
     border-radius: 5px;
+    animation: progress 0.5s ease-in-out infinite forwards;
+}
+
+@keyframes progress {
+    0%{
+    opacity: 0;
+    }
+    
+    100%{
+    opacity: 1;
+    }
 }
 
 .see-profiles:hover {
