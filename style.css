@@ -59,15 +59,15 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #10a237;
+    color: #a21010;
     font-size: 20px;
-    transition-duration: 0.55s;
+    transition-duration: 0.25s;
 }
 
 section {
     padding: 2rem 1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
 }
 
 #about {
@@ -138,44 +138,80 @@ padding-bottom: 0.5px;
 /* skill */
 
 .container{
-width: 100%;
+width: 80%;
 background-color: grey;
+border-radius: 5px;
 }
-.skills{
-text-align:right;
+#skills{
+text-align:left;
 padding-right: 10px;
 padding-bottom: 10px;
-color:black
+color:black;
 }
+
 .html{
 width: 95%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.2s ease-in-out forwards;
 }
 .css{
 width: 85%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.3s ease-in-out forwards;
 }
 .js{
 width: 55%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.4s ease-in-out forwards;
 }
 .express{
 width: 55%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.5s ease-in-out forwards;
 }
 .react{
 width: 50%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.6s ease-in-out forwards;
 }
 .mongoDB{
 width: 85%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.7s ease-in-out forwards;
 }
 .node{
 width: 50%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.8s ease-in-out forwards;
 }
 .Git{
 width: 85%;
 background-color: black;
+border-radius: 5px;
+animation: progress 1.9s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0%{width:0;
+    opacity: 0;
+    }
+    
+    100%{
+    opacity: 1;
+    color: #ffffff;
+    text-align: right;
+    }
+}
+
+#social ul{
+display:flex;
+justify-content: space-evenly;
+list-style: none;
 }
