@@ -5,13 +5,26 @@ scroll-behavior: smooth;
 
 body {
     font-family: Arial, sans-serif;
+    /* background-color:#5e5e5e; */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    animation: pulse 1s;
 }
 
+@keyframes pulse {
+
+    0% {
+        filter: blur(50px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+    
+}
+
+
 header {
-    /* background-image:url(walling-XLqiL-rz4V8-unsplash.jpg); */
     background-image:url(Screenshot\ 2024-07-21\ 134612.png);
     background-size: cover;
     color: #fff;
@@ -214,4 +227,11 @@ animation: progress 1.9s ease-in-out forwards;
 display:flex;
 justify-content: space-evenly;
 list-style: none;
+margin: 88px;
+margin-top: -10px;
+margin-bottom: -40px;
+}
+
+.hh:hover{
+    width: 55px;
 }

@@ -17,18 +17,17 @@ font-weight: 100;
 margin-left: 20px;
 color:teal;
 /* color:darkslateblue; */
+overflow: hidden;
+border-right: .15em solid teal;
+white-space:nowrap;
+/* letter-spacing: .15em; */
+animation:
+        typing 3.5s steps(50 , end),
+        blink-caret 0.5s step-end infinite;
 }
-
 
 p{
     margin-left: 20px;
-overflow: hidden;
-border-right: .15em solid rgb(255, 255, 255);
-/* white-space:; */
-letter-spacing: .15em;
-animation:
-        typing 3.5s steps(50, end),
-        blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -38,7 +37,7 @@ animation:
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgb(227, 227, 227); }
+    50% { border-color:teal; }
 }
 
 
@@ -98,4 +97,6 @@ color: grey;
     background-color:teal;
     color: #fff;
     font-size: 15px;
-    transition: 0.5s;}
+    transition: 0.5s;
+    animation: none;
+    }
