@@ -227,11 +227,4 @@ animation: progress 1.9s ease-in-out forwards;
 display:flex;
 justify-content: space-evenly;
 list-style: none;
-margin: 88px;
-margin-top: -10px;
-margin-bottom: -40px;
-}
-
-.hh:hover{
-    width: 55px;
 }
