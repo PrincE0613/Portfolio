@@ -66,6 +66,14 @@ p{
     margin-bottom: 25px;
 }
 
+.profile-pic:hover {
+    width: 150px;
+    height: 150px;
+    transition-delay: 0.1s;
+    transition: 0.40s ;
+}
+
+
 hr{
 color: grey;
 }

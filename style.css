@@ -119,6 +119,13 @@ footer {
     margin-bottom: 25px;
 }
 
+.profile-pics:hover {
+    width: 120px;
+    height: 120px;
+    transition: 0.40s;
+    transition-delay: 0.1s;
+}
+
 span{
 color: blue;
 cursor: pointer;
@@ -143,7 +150,7 @@ color: green;
 #copyright{
 display: block;
 margin-bottom:0px;
-color:#10a2375f;
+color:#839392a2;
 padding-bottom: 0.5px;
 }
 
@@ -168,6 +175,19 @@ background-color: black;
 border-radius: 5px;
 animation: progress 1.2s ease-in-out forwards;
 }
+
+@keyframes progress {
+    0%{width:0;
+    opacity: 0;
+    }
+    
+    100%{
+    opacity: 1;
+    color: #ffffff;
+    text-align: right;
+    }
+}
+
 .css{
 width: 85%;
 background-color: black;
@@ -227,4 +247,13 @@ animation: progress 1.9s ease-in-out forwards;
 display:flex;
 justify-content: space-evenly;
 list-style: none;
+}
+
+#social ul svg:hover{
+width: 50px;
+transition: 0.1s;
+}
+
+svg{
+    border-radius: 50%;
 }
